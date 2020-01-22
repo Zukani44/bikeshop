@@ -164,3 +164,47 @@ header {
         }
     }
 }
+
+.third-section {
+    .container {
+        .row {
+            h2 {
+                font-size: 60px;
+                line-height: 60px;
+                color: #3c3c3c;
+                font-family: "Old Standard TT";
+                font-weight: 400;
+                text-align: center;
+                margin: 10vh auto 4vh auto; 
+            }
+            p {
+                @include p-value;
+                width: 82%;
+                margin: 0 auto 7vh auto;
+                text-align: center;
+            }
+        }  
+    }
+    .container-fluid {
+        .row {
+            .col, .col-xl-8 {
+                padding-right: 0;
+                padding-left: 0;
+            }
+            .col {
+                .p1 {
+                    width: 3.5vw;
+                }
+                .p-2 {
+                    padding: .5rem 0!important;
+                    width: 9vw;
+                }
+            }
+            .col-xl-8 {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

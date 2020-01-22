@@ -119,4 +119,33 @@ header .container-fluid {
   margin: 10vh 0 0 1vw;
   font-style: italic; }
 
+.third-section .container .row h2 {
+  font-size: 60px;
+  line-height: 60px;
+  color: #3c3c3c;
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  text-align: center;
+  margin: 10vh auto 4vh auto; }
+.third-section .container .row p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  color: #6a6a6a;
+  font-family: "Ubuntu";
+  font-weight: 300;
+  width: 82%;
+  margin: 0 auto 7vh auto;
+  text-align: center; }
+.third-section .container-fluid .row .col, .third-section .container-fluid .row .col-xl-8 {
+  padding-right: 0;
+  padding-left: 0; }
+.third-section .container-fluid .row .col .p1 {
+  width: 3.5vw; }
+.third-section .container-fluid .row .col .p-2 {
+  padding: 0.5rem 0 !important;
+  width: 9vw; }
+.third-section .container-fluid .row .col-xl-8 img {
+  width: 100%; }
+
 /*# sourceMappingURL=main.css.map */
