@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Milkshake";
+    src: url(fonts/Milkshake\ 400.ttf);
+}
+
+@mixin p-value {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #6a6a6a;
+    font-family: "Ubuntu";
+    font-weight: 300;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+header {
+    .container-fluid {
+        background-image: url("pictures/bike0.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+        height: 100vh;
+
+        .nav {
+            padding-top: 2vh;
+            .col-xl-4 {
+                text-align: center;
+                a {
+                    line-height: 72px;
+                }
+                .logo {
+                    font-size: 56px;
+                    color: #fff;
+                    font-family: "Milkshake";                 
+                }
+                .menu:nth-child(2) {
+                    margin: 0 3vw;
+                }
+                .menu {
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                    font-family: "Ubuntu";
+                    font-weight: 400;
+                }
+                .icon-basket {
+                    color: #fff;
+                    padding-right: 0.2vw;
+                }
+                .basket {
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                    font-family: "Ubuntu";
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .content {
+            position: relative;
+            top: 28%;
+            transform: translateY(-25%);
+            .col-xl-8 {
+                text-align: center;
+                h1 {
+                    font-size: 72px;
+                    line-height: 72px;
+                    color: #fff;
+                    font-family: "Old Standard TT";
+                    font-weight: 400;
+                    margin-bottom: 2vh;
+                }
+                h3 {
+                    font-size: 28px;
+                    letter-spacing: 2px;
+                    color: #c2c1c1;
+                    font-family: "Ubuntu";
+                    font-weight: 300;
+                }
+                .icon-play-circled {
+                    color: #fff;
+                    font-size: -webkit-xxx-large;
+                    transition: .5s ease-in-out;
+                    &:hover {
+                        color: #3c3c3c;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.first-section {
+    margin-top: 12vh;
+    .container {
+        .row {
+            .col-xl-6 {
+                h2 {
+                    font-size: 60px;
+                    line-height: 60px;
+                    color: #3c3c3c;
+                    font-family: "Old Standard TT";
+                    font-weight: 400;
+                    margin: 10vh 0 4vh 0;
+                }
+                p:nth-child(3) {
+                    padding: 1vh 0;
+                }
+                p {
+                    @include p-value;
+                    width: 95%;
+                }
+                button {
+                    width: 34%;
+                    height: 9%;
+                    margin-top: 5vh;
+                    border: none;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                    background-color: #3c3c3c;
+                    font-family: "Ubuntu";
+                    font-weight: 400;
+                    p {
+                        text-align: center;
+                        width: 100%;
+                        margin: auto;
+                        color: #fff;
+                        border: 1px solid #fff;
+                        padding: 8%;
+                    }
+                }
+                img {
+                    width: 120%;
+                }                
+            }
+        }
+    }
+}
+
+.second-section {
+    .container-fluid {
+        .row {
+            .left {              
+                content: "";
+                background-image: url("pictures/bike2.png");
+                background-repeat: no-repeat;
+                background-position: right; 
+                height: 560px; 
+            }
+            .right {
+                p {
+                    @include p-value;
+                    width: 70%;
+                    margin: 10vh 0 0 1vw;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
