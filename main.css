@@ -1,6 +1,8 @@
+/*  Utilities  */
 @font-face {
   font-family: "Milkshake";
   src: url(fonts/Milkshake\ 400.ttf); }
+/*  Styles  */
 body {
   background-color: #fff; }
 
@@ -67,9 +69,9 @@ header .container-fluid {
   .first-section .container .row .col-xl-6 h2 {
     font-size: 60px;
     line-height: 60px;
-    color: #3c3c3c;
     font-family: "Old Standard TT";
     font-weight: 400;
+    color: #3c3c3c;
     margin: 10vh 0 4vh 0; }
   .first-section .container .row .col-xl-6 p:nth-child(3) {
     padding: 1vh 0; }
@@ -82,16 +84,11 @@ header .container-fluid {
     font-weight: 300;
     width: 95%; }
   .first-section .container .row .col-xl-6 button {
+    border: none;
+    background-color: #3c3c3c;
     width: 34%;
     height: 9%;
-    margin-top: 5vh;
-    border: none;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #ffffff;
-    background-color: #3c3c3c;
-    font-family: "Ubuntu";
-    font-weight: 400; }
+    margin-top: 5vh; }
     .first-section .container .row .col-xl-6 button p {
       text-align: center;
       width: 100%;
@@ -122,9 +119,9 @@ header .container-fluid {
 .third-section .container .row h2 {
   font-size: 60px;
   line-height: 60px;
-  color: #3c3c3c;
   font-family: "Old Standard TT";
   font-weight: 400;
+  color: #3c3c3c;
   text-align: center;
   margin: 10vh auto 4vh auto; }
 .third-section .container .row p {
@@ -147,5 +144,66 @@ header .container-fluid {
   width: 9vw; }
 .third-section .container-fluid .row .col-xl-8 img {
   width: 100%; }
+
+.fourth-section .container {
+  margin-top: 15vh; }
+  .fourth-section .container .row .col-xl-10 {
+    padding-right: 0;
+    padding-left: 0; }
+    .fourth-section .container .row .col-xl-10 h2 {
+      font-size: 60px;
+      line-height: 60px;
+      font-family: "Old Standard TT";
+      font-weight: 400;
+      font-size: 58px; }
+    .fourth-section .container .row .col-xl-10 p {
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 28px;
+      color: #6a6a6a;
+      font-family: "Ubuntu";
+      font-weight: 300;
+      width: 90%;
+      margin: 3vh auto 9vh auto;
+      text-align: center; }
+  .fourth-section .container .row .col-xl-3 img {
+    width: 95%;
+    display: block;
+    margin: auto; }
+  .fourth-section .container .row .first {
+    margin-top: 5vh;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #3c3c3c;
+    font-family: "Old Standard TT";
+    font-weight: 700;
+    text-align: center; }
+  .fourth-section .container .row .second {
+    font-size: 22px;
+    color: #6a6a6a;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    text-align: center; }
+  .fourth-section .container .row button {
+    border: none;
+    background-color: #3c3c3c;
+    display: block;
+    margin: 8vh auto 30vh auto;
+    width: 80%;
+    height: 9%; }
+    .fourth-section .container .row button p {
+      text-align: center;
+      width: 100%;
+      margin: auto;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 8%;
+      padding: 5%; }
+
+footer .container-fluid {
+  background-image: url("pictures/bike0.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; }
 
 /*# sourceMappingURL=main.css.map */

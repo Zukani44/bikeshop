@@ -1,3 +1,5 @@
+/*  Utilities  */
+
 @font-face {
     font-family: "Milkshake";
     src: url(fonts/Milkshake\ 400.ttf);
@@ -12,6 +14,28 @@
     font-weight: 300;
 }
 
+@mixin h2-value {
+    font-size: 60px;
+    line-height: 60px;
+    font-family: "Old Standard TT";
+    font-weight: 400;
+}
+
+@mixin button-value {
+    border: none;
+    background-color: #3c3c3c;
+}
+
+@mixin button-p-value {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8%;
+}
+
+/*  Styles  */
 
 body {
     background-color: #fff;
@@ -101,11 +125,8 @@ header {
         .row {
             .col-xl-6 {
                 h2 {
-                    font-size: 60px;
-                    line-height: 60px;
+                    @include h2-value;
                     color: #3c3c3c;
-                    font-family: "Old Standard TT";
-                    font-weight: 400;
                     margin: 10vh 0 4vh 0;
                 }
                 p:nth-child(3) {
@@ -116,23 +137,12 @@ header {
                     width: 95%;
                 }
                 button {
+                    @include button-value;
                     width: 34%;
                     height: 9%;
                     margin-top: 5vh;
-                    border: none;
-                    font-size: 18px;
-                    letter-spacing: 1px;
-                    color: #ffffff;
-                    background-color: #3c3c3c;
-                    font-family: "Ubuntu";
-                    font-weight: 400;
                     p {
-                        text-align: center;
-                        width: 100%;
-                        margin: auto;
-                        color: #fff;
-                        border: 1px solid #fff;
-                        padding: 8%;
+                        @include button-p-value;
                     }
                 }
                 img {
@@ -169,11 +179,8 @@ header {
     .container {
         .row {
             h2 {
-                font-size: 60px;
-                line-height: 60px;
+                @include h2-value;
                 color: #3c3c3c;
-                font-family: "Old Standard TT";
-                font-weight: 400;
                 text-align: center;
                 margin: 10vh auto 4vh auto; 
             }
@@ -207,4 +214,74 @@ header {
             }
         }
     }
+}
+
+.fourth-section {
+    .container {
+        margin-top: 15vh;
+        .row {
+            .col-xl-10 {
+                padding-right: 0;
+                padding-left: 0;
+                h2 {
+                    @include h2-value;
+                    font-size: 58px;
+                }
+                p {
+                    @include p-value;
+                    width: 90%;
+                    margin: 3vh auto 9vh auto;
+                    text-align: center;
+                }
+            }
+            .col-xl-3 {
+                img {
+                    width: 95%;
+                    display: block;
+                    margin: auto;
+                }
+            }
+            .first {
+                margin-top: 5vh;
+                font-size: 22px;
+                letter-spacing: 1px;
+                color: #3c3c3c;
+                font-family: "Old Standard TT";
+                font-weight: 700;
+                text-align: center;
+            }
+            .second {
+                font-size: 22px;
+                color: #6a6a6a;
+                font-family: "Ubuntu";
+                font-weight: 500;
+                text-align: center;
+            }
+            button {
+                @include button-value;
+                display: block;
+                margin: 8vh auto 30vh auto;
+                width: 80%;
+                height: 9%;
+                p {
+                    @include button-p-value;
+                    padding: 5%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .container-fluid {
+        background-image: url("pictures/bike0.png");
+        background-repeat: no-repeat;
+        background-position: center; 
+        height: 100vh;
+        .row {
+            .col-xl-8 {
+                
+            }
+        }
+    }    
 }
